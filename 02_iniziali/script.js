@@ -2,12 +2,10 @@
 
 const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
-
 // Dichiara la funzione qui.
-
+const getFirstChar = (elements) => elements.map((element) => element[0]);
 
 // Invoca la funzione qui e stampa il risultato in console
-
-
+console.log(getFirstChar(names));
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]

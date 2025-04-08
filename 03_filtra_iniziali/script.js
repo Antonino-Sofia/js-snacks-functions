@@ -2,12 +2,15 @@
 
 const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
-
 // Dichiara la funzione qui.
-
+const filterByFirstLetter = (elements, search) =>
+  elements.filter((element) => {
+    const firstLetter = element[0];
+    if (firstLetter === search) {
+      return true;
+    }
+  });
 
 // Invoca la funzione qui e stampa il risultato in console
-
-
-
+console.log(filterByFirstLetter(names, "A"));
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
